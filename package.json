@@ -25,6 +25,8 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "jquery": "^3.6.3",
+    "lodash": "^4.17.21",
+    "popper.js": "^1.16.1"
   }
 }
