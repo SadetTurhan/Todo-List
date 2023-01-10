@@ -1,29 +1,25 @@
 import 'bootstrap';
-function navBar() {
+function sideBar() {
   const container = document.getElementById("container");
-    container.innerHTML = 
-       '<nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top">' +
-      '<a href="#" class="navbar-brand">Todo List</a>' +
-      '<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">'+
-      '<span class="navbar-toggler-icon"></span>'+
-      '</button>'+
-      '<div class="collapse navbar-collapse" id="navbarCollapse">'+
-      '<ul class="navbar-nav ml-auto>'+
-      '<li class="navbar-item">'+
-      '<button class="nav-link">All tasks</button>'+
-      '</li>'+
-      '<li class="navbar-item">'+
-      '<button class="nav-link">Urgent Tasks</button>'+
-      '</li>'+
-      '<li class="navbar-item">'+
-      '<button class="nav-link active" id="daily-task">Add Tasks</button>'+
-      '</li>'+
-      '</ul>'+
-      '</div>' +
-      '</nav>'
+  const sidebar = document.createElement("nav");
+  sidebar.innerHTML = '<nav class="navbar navbar-expand-lg navbar-light bg-light">'+
+  '<a class="navbar-brand" href="#">Navbar</a>'+
+  '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">'+
+    '<span class="navbar-toggler-icon"></span>'+
+  '</button>'+
+  '<div class="collapse navbar-collapse" id="navbarNavAltMarkup">'+
+    '<div class="navbar-nav">'+
+      '<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>'+
+      '<a class="nav-item nav-link" href="#">Features</a>'+
+      '<a class="nav-item nav-link" href="#">Pricing</a>'+
+      '<a class="nav-item nav-link disabled" href="#">Disabled</a>'+
+    '</div>'+
+  '</div>'+
+'</nav>'
 
+container.appendChild(sidebar);
 };
  
 
 
-export {navBar};
+export {sideBar};
