@@ -11,7 +11,8 @@ function urgentTasks(){
         '<div class="col-lg-4">Due Date</div>'+
         '<div class="col-lg-4">Progess</div>'+
     '</div>'+
-    '</div>';
+    '</div>'+
+    '<button type="button" class="btn btn-success">Add New Task</button>';
     container.appendChild(dailyTasksDetails);
     };
 
