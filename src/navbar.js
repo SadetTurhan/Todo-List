@@ -14,7 +14,7 @@ function navBar() {
     '</div>'+
   '</div>'+
 '</nav>'+
-'<button type="button" class="btn btn-success">add task</button>'
+'<button type="button" class="btn btn-success" id="button2">add task</button>'
 
 };
  
