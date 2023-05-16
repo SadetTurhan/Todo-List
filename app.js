@@ -4,13 +4,16 @@ const taskArea = document.getElementById('taskArea');
 
 function addTask(){
     if(inputTaskName.value != ' '){
-    
+    const Task = {
+        Taskname: inputTaskName.value
+    }
     const newTask = document.createElement("div");
     newTask.classList.add("newTask");
     const newTaskName = document.createElement("p");
     const deleteButton = document.createElement("button");
     deleteButton.classList.add('deleteButton');
     deleteButton.textContent = "Delete Task";
+    localStorage.setItem("task",JSON.stringify(Task));
     function deleteTask(){
         newTask.remove() 
     };
